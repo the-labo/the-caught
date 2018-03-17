@@ -18,9 +18,9 @@ describe('the-caught', () => {
 
   it('Render a component', () => {
     let element = render(
-       <TheCaught />
+      <TheCaught/>
     )
-    ok(element)
+    ok(!element)
   })
 })
 
