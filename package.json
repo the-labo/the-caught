@@ -1,0 +1,60 @@
+{
+  "name": "the-caught",
+  "description": "Component to show caught errors",
+  "version": "1.0.0",
+  "author": {
+    "name": "okunishinishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "bugs": {
+    "url": "https://github.com/the-labo/the-caught/issues"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.0",
+    "the-component-util": "^2.1.2",
+    "the-condition": "^3.0.0",
+    "the-style": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.0.0-beta.42",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "the-component-demo": "^4.0.6",
+    "the-script-build": "*",
+    "the-script-doc": "^1.0.2",
+    "the-script-release": "^1.0.6",
+    "the-script-share": "^1.0.5",
+    "the-script-test": "^2.0.1",
+    "the-script-update": "^1.0.0",
+    "the-templates": "*"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=4"
+  },
+  "homepage": "https://github.com/the-labo/the-caught#readme",
+  "keywords": [
+    "react-component",
+    "the"
+  ],
+  "license": "MIT",
+  "main": "shim",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "repository": "the-labo/the-caught",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "the-script-build && the-script-doc",
+    "release": "the-script-release -y",
+    "share": "the-script-share",
+    "test": "the-script-test",
+    "update": "the-script-update",
+    "watch": "the-script-build -w"
+  }
+}

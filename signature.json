@@ -1,0 +1,25 @@
+{
+  "TheCaught": {
+    "description": "Component to show caught errors",
+    "displayName": "TheCaught",
+    "methods": []
+  },
+  "TheCaughtStyle": {
+    "description": "Style for TheCaught",
+    "displayName": "TheCaughtStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}
