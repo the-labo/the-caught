@@ -13,6 +13,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
+    "the-button": "^3.0.15",
     "the-check": "^1.2.2",
     "the-component-util": "^2.1.2",
     "the-condition": "^3.0.0",

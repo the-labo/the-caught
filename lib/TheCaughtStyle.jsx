@@ -31,11 +31,11 @@ TheCaughtStyle.data = (options) => {
   } = options
   return asStyleData('.the-caught', {
     '.the-caught-stack': {
-      background: '#FAFAFA',
-      border: '1px solid #F0F0F0',
+      background: '#FCFCFC',
+      border: '1px solid #F5F5F5',
       borderRadius: '2px',
       boxSizing: 'border-box',
-      color: '#AAA',
+      color: '#999',
       fontSize: 'small',
       maxHeight: '50vh',
       maxWidth: '100%',
@@ -48,6 +48,7 @@ TheCaughtStyle.data = (options) => {
       borderRadius: '4px',
       boxSizing: 'border-box',
       color: '#A55',
+      maxWidth: '0 auto',
       padding: '16px',
       width: '100%',
     },
