@@ -34,9 +34,9 @@ class TheCaught extends React.Component {
         >{String(error.message || error)}</h3>
         {children}
         <TheCondition if={!!componentStack && !isProduction()}>
-          <p className='the-caught-stack'>
+          <pre className='the-caught-stack'>
             {componentStack}
-          </p>
+          </pre>
         </TheCondition>
       </div>
     )
