@@ -1,11 +1,12 @@
 'use strict'
 
-import React from 'react'
-import PropTypes from 'prop-types'
 import c from 'classnames'
-import TheCaughtStyle from './TheCaughtStyle'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { isProduction } from 'the-check'
+import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
 import { TheCondition } from 'the-condition'
-import { htmlAttributesFor, eventHandlersFor } from 'the-component-util'
+import TheCaughtStyle from './TheCaughtStyle'
 
 /**
  * Component to show caught errors
@@ -14,8 +15,8 @@ class TheCaught extends React.Component {
   render () {
     const {props} = this
     const {
-      className,
       children,
+      className,
       error,
       info,
     } = props
@@ -32,7 +33,7 @@ class TheCaught extends React.Component {
             role='heading'
         >{String(error.message || error)}</h3>
         {children}
-        <TheCondition if={!!componentStack}>
+        <TheCondition if={!!componentStack && !isProduction()}>
           <p className='the-caught-stack'>
             {componentStack}
           </p>
@@ -48,7 +49,7 @@ TheCaught.propTypes = {
   /** Caught error */
   error: PropTypes.string,
   /** Error Info */
-  info: PropTypes.object
+  info: PropTypes.object,
 }
 
 TheCaught.defaultProps = {

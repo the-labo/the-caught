@@ -13,6 +13,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
+    "the-check": "^1.2.2",
     "the-component-util": "^2.1.2",
     "the-condition": "^3.0.0",
     "the-style": "^2.1.0"
@@ -23,13 +24,13 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "the-component-demo": "^4.0.6",
-    "the-script-build": "*",
+    "the-script-build": "^3.1.5",
     "the-script-doc": "^1.0.2",
     "the-script-release": "^1.0.6",
     "the-script-share": "^1.0.5",
     "the-script-test": "^2.0.1",
     "the-script-update": "^1.0.0",
-    "the-templates": "*"
+    "the-templates": "^3.1.7"
   },
   "engines": {
     "node": ">=8",

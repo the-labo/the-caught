@@ -1,13 +1,13 @@
 'use strict'
 
-import React from 'react'
-import PropTypes from 'prop-types'
 import c from 'classnames'
-import TheStyle from 'the-style'
+import PropTypes from 'prop-types'
+import React from 'react'
 import { asStyleData } from 'the-component-util'
+import TheStyle from 'the-style'
 
 /** Style for TheCaught */
-const TheCaughtStyle = ({id, className, options}) => (
+const TheCaughtStyle = ({className, id, options}) => (
   <TheStyle {...{id}}
             className={c('the-caught-style', className)}
             styles={TheCaughtStyle.data(options)}
@@ -17,38 +17,38 @@ const TheCaughtStyle = ({id, className, options}) => (
 TheCaughtStyle.displayName = 'TheCaughtStyle'
 TheCaughtStyle.propTypes = {
   /** Style options */
-  options: PropTypes.object
+  options: PropTypes.object,
 }
 
 TheCaughtStyle.defaultProps = {
-  options: {}
+  options: {},
 }
 
 TheCaughtStyle.data = (options) => {
   const {ThemeValues} = TheStyle
   const {
-    dominantColor = ThemeValues.dominantColor
+    dominantColor = ThemeValues.dominantColor,
   } = options
   return asStyleData('.the-caught', {
-    '&': {
-      width: '100%',
-      background: '#FEE',
-      color: '#A55',
-      border: '2px solid #A55',
-      padding: '16px',
-      borderRadius: '4px'
-    },
     '.the-caught-stack': {
       background: '#FAFAFA',
+      border: '1px solid #F0F0F0',
+      borderRadius: '2px',
       color: '#AAA',
       fontSize: 'small',
-      padding: '4px',
-      overflow: 'scroll',
-      maxWidth: '100%',
       maxHeight: '50vh',
-      borderRadius: '2px',
-      border: '1px solid #F0F0F0',
-    }
+      maxWidth: '100%',
+      overflow: 'scroll',
+      padding: '4px',
+    },
+    '&': {
+      background: '#FEE',
+      border: '2px solid #A55',
+      borderRadius: '4px',
+      color: '#A55',
+      padding: '16px',
+      width: '100%',
+    },
   })
 }
 

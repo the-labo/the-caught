@@ -108,6 +108,12 @@ Components
 
 Component to show caught errors
 
+**Props**
+
+| Name | Type | Description | Default |
+| --- | --- | ---- | ---- |
+| `error` | string  | Caught error | `null` |
+| `info` | object  | Error Info | `null` |
 
 ### TheCaughtStyle
 

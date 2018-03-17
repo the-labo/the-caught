@@ -2,7 +2,31 @@
   "TheCaught": {
     "description": "Component to show caught errors",
     "displayName": "TheCaught",
-    "methods": []
+    "methods": [],
+    "props": {
+      "error": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Caught error",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
+      "info": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Error Info",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      }
+    }
   },
   "TheCaughtStyle": {
     "description": "Style for TheCaught",
