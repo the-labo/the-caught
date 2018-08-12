@@ -9,7 +9,6 @@ import TheCaught from './TheCaught'
 import TheCaughtStyle from './TheCaughtStyle'
 
 export {
-  TheCaught,
-  TheCaughtStyle,
+ TheCaught,
+ TheCaughtStyle,
 }
-
