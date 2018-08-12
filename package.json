@@ -16,7 +16,7 @@
     "the-button": "^3.0.24",
     "the-check": "^2.0.2",
     "the-component-util": "^3.0.2",
-    "the-condition": "^3.0.3",
+    "the-condition": "^3.0.4",
     "the-style": "^2.2.0"
   },
   "devDependencies": {
