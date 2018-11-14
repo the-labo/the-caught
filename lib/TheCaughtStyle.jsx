@@ -4,11 +4,11 @@ import c from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { asStyleData } from 'the-component-util'
-import {TheStyle} from 'the-style'
+import { TheStyle } from 'the-style'
 
 /** Style for TheCaught */
-const TheCaughtStyle = ({className, id, options}) => (
-  <TheStyle {...{id}}
+const TheCaughtStyle = ({ className, id, options }) => (
+  <TheStyle {...{ id }}
             className={c('the-caught-style', className)}
             styles={TheCaughtStyle.data(options)}
   />
@@ -25,11 +25,21 @@ TheCaughtStyle.defaultProps = {
 }
 
 TheCaughtStyle.data = (options) => {
-  const {ThemeValues} = TheStyle
+  const { ThemeValues } = TheStyle
   const {
     dominantColor = ThemeValues.dominantColor,
   } = options
-  return asStyleData('.the-caught', {
+  return asStyleData({
+    '.the-caught': {
+      background: '#FEE',
+      border: '2px solid #A55',
+      borderRadius: '4px',
+      boxSizing: 'border-box',
+      color: '#A55',
+      maxWidth: '0 auto',
+      padding: '16px',
+      width: '100%',
+    },
     '.the-caught-stack': {
       background: '#FCFCFC',
       border: '1px solid #F5F5F5',
@@ -41,16 +51,6 @@ TheCaughtStyle.data = (options) => {
       maxWidth: '100%',
       overflow: 'scroll',
       padding: '4px',
-    },
-    '&': {
-      background: '#FEE',
-      border: '2px solid #A55',
-      borderRadius: '4px',
-      boxSizing: 'border-box',
-      color: '#A55',
-      maxWidth: '0 auto',
-      padding: '16px',
-      width: '100%',
     },
   })
 }

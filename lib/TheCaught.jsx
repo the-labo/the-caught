@@ -13,20 +13,20 @@ import TheCaughtStyle from './TheCaughtStyle'
  */
 class TheCaught extends React.Component {
   render () {
-    const {props} = this
+    const { props } = this
     const {
       children,
       className,
       error,
       info,
     } = props
-    const {componentStack} = info || {}
+    const { componentStack } = info || {}
     if (!error) {
       return null
     }
     return (
-      <div {...htmlAttributesFor(props, {except: ['className']})}
-           {...eventHandlersFor(props, {except: []})}
+      <div {...htmlAttributesFor(props, { except: ['className'] })}
+           {...eventHandlersFor(props, { except: [] })}
            className={c('the-caught', className)}
       >
         <h3 className='the-caught-title'
