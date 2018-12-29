@@ -6,7 +6,6 @@ import React from 'react'
 import { isProduction } from 'the-check'
 import { eventHandlersFor, htmlAttributesFor } from 'the-component-util'
 import { TheCondition } from 'the-condition'
-import TheCaughtStyle from './TheCaughtStyle'
 
 /**
  * Component to show caught errors
@@ -42,8 +41,6 @@ class TheCaught extends React.Component {
     )
   }
 }
-
-TheCaught.Style = TheCaughtStyle
 
 TheCaught.propTypes = {
   /** Caught error */

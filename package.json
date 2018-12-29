@@ -13,19 +13,19 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.6.2",
-    "the-check": "^2.0.13",
+    "the-check": "^2.0.17",
     "the-component-util": "^3.0.20",
     "the-condition": "^3.0.4",
-    "the-style": "^2.2.3"
+    "the-style": "^2.2.4"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0-rc.1",
+    "@babel/runtime": "^7.2.0",
     "ape-tmpl": "^6.0.11",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "the-component-demo": "^4.0.17",
-    "the-script-build": "^4.0.11",
+    "the-script-build": "^4.0.16",
     "the-script-doc": "^1.0.2",
     "the-script-release": "^1.0.8",
     "the-script-share": "^1.0.5",
