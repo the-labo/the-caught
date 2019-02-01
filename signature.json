@@ -28,6 +28,37 @@
       }
     }
   },
+  "TheCaughtCatcher": {
+    "description": "",
+    "displayName": "TheCaughtCatcher",
+    "methods": [
+      {
+        "name": "componentDidCatch",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "error",
+            "type": null
+          },
+          {
+            "name": "info",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "title": {
+        "defaultValue": {
+          "value": "'Something is Wrong'",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
   "TheCaughtStyle": {
     "description": "Style for TheCaught",
     "displayName": "TheCaughtStyle",
