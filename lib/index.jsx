@@ -6,9 +6,11 @@
 'use strict'
 
 import TheCaught from './TheCaught'
+import TheCaughtCatcher from './TheCaughtCatcher'
 import TheCaughtStyle from './TheCaughtStyle'
 
 export {
  TheCaught,
+ TheCaughtCatcher,
  TheCaughtStyle,
 }
