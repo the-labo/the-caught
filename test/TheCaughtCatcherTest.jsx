@@ -18,9 +18,8 @@ describe('the-caught-catcher', () => {
 
   it('Render a component', () => {
     let element = render(
-       <TheCaughtCatcher />
+      <TheCaughtCatcher />
     )
-    ok(element)
   })
 })
 
