@@ -8,9 +8,10 @@ import { TheStyle } from 'the-style'
 
 /** Style for TheCaught */
 const TheCaughtStyle = ({ className, id, options }) => (
-  <TheStyle {...{ id }}
-            className={c('the-caught-style', className)}
-            styles={TheCaughtStyle.data(options)}
+  <TheStyle
+    {...{ id }}
+    className={c('the-caught-style', className)}
+    styles={TheCaughtStyle.data(options)}
   />
 )
 
@@ -26,9 +27,7 @@ TheCaughtStyle.defaultProps = {
 
 TheCaughtStyle.data = (options) => {
   const { ThemeValues } = TheStyle
-  const {
-    dominantColor = ThemeValues.dominantColor,
-  } = options
+  const { dominantColor = ThemeValues.dominantColor } = options
   return asStyleData({
     '.the-caught': {
       background: '#FEE',

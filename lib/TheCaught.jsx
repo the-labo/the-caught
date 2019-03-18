@@ -11,31 +11,25 @@ import { TheCondition } from 'the-condition'
  * Component to show caught errors
  */
 class TheCaught extends React.Component {
-  render () {
+  render() {
     const { props } = this
-    const {
-      children,
-      className,
-      error,
-      info,
-    } = props
+    const { children, className, error, info } = props
     const { componentStack } = info || {}
     if (!error) {
       return null
     }
     return (
-      <div {...htmlAttributesFor(props, { except: ['className'] })}
-           {...eventHandlersFor(props, { except: [] })}
-           className={c('the-caught', className)}
+      <div
+        {...htmlAttributesFor(props, { except: ['className'] })}
+        {...eventHandlersFor(props, { except: [] })}
+        className={c('the-caught', className)}
       >
-        <h3 className='the-caught-title'
-            role='heading'
-        >{String(error.message || error)}</h3>
+        <h3 className='the-caught-title' role='heading'>
+          {String(error.message || error)}
+        </h3>
         {children}
         <TheCondition if={!!componentStack && !isProduction()}>
-          <pre className='the-caught-stack'>
-            {componentStack}
-          </pre>
+          <pre className='the-caught-stack'>{componentStack}</pre>
         </TheCondition>
       </div>
     )

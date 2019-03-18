@@ -1,6 +1,5 @@
 'use strict'
 
-import c from 'classnames'
 import React from 'react'
 import TheCaught from './TheCaught'
 
@@ -18,9 +17,7 @@ class TheCaughtCatcher extends React.Component {
 
   render() {
     const { children, title } = this.props
-    const {
-      caught,
-    } = this.state
+    const { caught } = this.state
     if (!caught) {
       return children
     }

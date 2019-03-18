@@ -10,7 +10,7 @@ import TheCaughtCatcher from './TheCaughtCatcher'
 import TheCaughtStyle from './TheCaughtStyle'
 
 export {
- TheCaught,
- TheCaughtCatcher,
- TheCaughtStyle,
+  TheCaught,
+  TheCaughtCatcher,
+  TheCaughtStyle,
 }
